@@ -94,17 +94,12 @@ export default function DashboardScreen() {
 
         <View className="mt-4 items-end">
           <Button
-            label={futureTipVisible ? 'Hide tip' : 'Ask AI'}
+            label="Ask AI"
             size="sm"
-            variant={futureTipVisible ? 'ghost' : 'primary'}
-            leftIcon={
-              <Bot
-                size={16}
-                color={futureTipVisible ? colors.text.primary : '#FFFFFF'}
-              />
-            }
-            onPress={() => setFutureTipVisible((value) => !value)}
-            accessibilityLabel="Ask AI about your bike goal"
+            variant="primary"
+            leftIcon={<Bot size={16} color="#FFFFFF" />}
+            onPress={() => router.push('/(tabs)/ai')}
+            accessibilityLabel="Ask AI about your financial future"
           />
         </View>
       </DashboardCard>
