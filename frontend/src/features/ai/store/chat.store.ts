@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-import { askFutureSelf } from '@/services/ai/mockAskAiService';
+import { askFutureSelf } from '@/features/ai/services/mockAskAiService';
 import { ChatMessage } from '../types';
 
 interface ChatStore {
